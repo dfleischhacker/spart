@@ -1,0 +1,11 @@
+syntax:glob
+*~
+results.xml
+*.swp
+nbproject/*
+build/*
+dist/*
+
+syntax:re
+testcases/benchmark/[0-9]{3}/[^_]*_[^_]*\.rdf
+testcases/benchmark/[a-zA-Z]*.(xml|xsl)
