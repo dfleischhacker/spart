@@ -2,7 +2,7 @@ syntax:glob
 *~
 results.xml
 *.swp
-nbproject/*
+nbproject/private/*
 build/*
 dist/*
 
