@@ -124,3 +124,14 @@ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 
+
+Third-Party Components
+----------------------
+The distributions of spart contain third-party components. These components and
+the corresponding licences are given in the following.
+
+* OWL API (http://owlapi.sf.net)
+* Pellet (http://clarkparsia.com/pellet) which in turn uses other libraries
+
+For further information regarding the licenses of third-party libraries consult
+the files in the licensing/ directory of this distribution.
