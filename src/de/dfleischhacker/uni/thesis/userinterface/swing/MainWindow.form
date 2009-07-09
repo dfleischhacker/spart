@@ -74,7 +74,7 @@
               <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="57" max="32767" attributes="0"/>
+              <EmptySpace pref="69" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="aboutButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="exitButton" alignment="3" min="-2" max="-2" attributes="0"/>

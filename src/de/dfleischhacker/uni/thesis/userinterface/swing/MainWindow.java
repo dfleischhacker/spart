@@ -68,17 +68,6 @@ public class MainWindow extends javax.swing.JFrame {
 
 	/** Creates new form MainWindow */
 	public MainWindow() {
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException ex) {
-			Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-		} catch (InstantiationException ex) {
-			Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-		} catch (IllegalAccessException ex) {
-			Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-		} catch (UnsupportedLookAndFeelException ex) {
-			Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-		}
 		initComponents();
 	}
 
@@ -642,7 +631,7 @@ public class MainWindow extends javax.swing.JFrame {
 		JOptionPane.showMessageDialog(this,
 			"Semantic Precision and Recall Calculator\n(c) 2009 Daniel Fleischhacker\n" +
 			"This tool is provided under a 2-clause BSD license (see LICENSE file)\n" +
-			"Bugtracker, Downloads and Source code at http://bitbucket.org/dfleischhacker/prt/",
+			"Bugtracker, Downloads and Source code at http://bitbucket.org/dfleischhacker/spart/",
 			"About...", JOptionPane.INFORMATION_MESSAGE);
 	}//GEN-LAST:event_aboutButtonActionPerformed
 
