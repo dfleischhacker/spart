@@ -50,7 +50,6 @@ import org.semanticweb.owl.model.OWLEntity;
 import org.semanticweb.owl.model.OWLOntology;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import de.dfleischhacker.uni.thesis.utils.alignment.InvalidAlignmentException;
 
 /**
  * Represents an alignment.

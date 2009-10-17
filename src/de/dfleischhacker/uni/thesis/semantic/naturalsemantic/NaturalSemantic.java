@@ -365,6 +365,12 @@ public class NaturalSemantic implements SemanticModule {
 		for (Correspondence corr : align.getCorrespondences()) {
 			try {
 				Set<OWLAxiom> axiomset = this.toAxiom(corr, alignedOntology);
+
+				if (axiomset == null) {
+					// ignore axiomsets which do not contain anything
+					continue;
+				}
+
 				for (OWLAxiom axiom : axiomset) {
 					alignedOntology.getManager().addAxiom(alignedOntology, axiom);
 				}
@@ -372,7 +378,8 @@ public class NaturalSemantic implements SemanticModule {
 				throw new MergingException(ex.getMessage());
 			}
 			catch (UnsupportedCorrespondenceException ex) {
-				throw new MergingException(ex.getMessage());
+				System.out.println("Warning: Ignoring unsupported correspondence!");
+				//throw new MergingException(ex.getMessage());
 			}
 		}
 
