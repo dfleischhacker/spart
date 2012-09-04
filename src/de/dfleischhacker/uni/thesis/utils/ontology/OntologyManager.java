@@ -34,14 +34,15 @@
 
 package de.dfleischhacker.uni.thesis.utils.ontology;
 
-import java.io.File;
-import java.net.URI;
 import org.semanticweb.owl.apibinding.OWLManager;
 import org.semanticweb.owl.io.RDFXMLOntologyFormat;
 import org.semanticweb.owl.model.OWLOntologyCreationException;
 import org.semanticweb.owl.model.OWLOntologyManager;
 import org.semanticweb.owl.model.OWLOntologyStorageException;
 import org.semanticweb.owl.model.UnknownOWLOntologyException;
+
+import java.io.File;
+import java.net.URI;
 
 /**
  * This class provides methods to generate ontologies. It is possible to generate
@@ -65,7 +66,7 @@ public class OntologyManager {
 		throws OWLOntologyCreationException {
 
 		if (!filename.contains("://")) {
-			filename = "file://" + filename;
+			filename = String.valueOf(new File(filename).toURI());
 		}
 
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
